@@ -1,1 +1,3490 @@
-<h1>Hola</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portafolio profesional de Jhonatan Arias Cerquera - Sostenibilidad, Trazabilidad, Gestión de Datos y Tecnología.">
+
+    <meta name="author" content="Jhonatan Arias Cerquera">
+
+    <meta property="og:title"
+          content="Jhonatan Arias Cerquera | Portafolio Profesional">
+
+    <meta property="og:description"
+          content="Sostenibilidad · Trazabilidad · Datos · Tecnología · Sector Cafetero">
+
+    <title>Jhonatan Arias Cerquera | Portafolio Profesional</title>
+
+
+    <!-- =========================
+         FUENTES
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+          rel="stylesheet">
+
+
+    <!-- =========================
+         ICONOS
+    ========================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- =========================
+         ESTILOS CSS
+    ========================== -->
+
+    <style>
+
+        /* =========================
+           VARIABLES
+        ========================== */
+
+        :root {
+
+            --verde: #006241;
+
+            --verde-oscuro: #003b2a;
+
+            --verde-claro: #dfeee7;
+
+            --verde-medio: #0a7653;
+
+            --cafe: #7a4b2d;
+
+            --fondo: #f6f7f4;
+
+            --blanco: #ffffff;
+
+            --texto: #15231c;
+
+            --gris: #66746d;
+
+            --borde: rgba(21,35,28,.11);
+
+            --sombra:
+                0 25px 70px rgba(17,43,31,.10);
+
+            --radio: 24px;
+
+            --ancho: 1180px;
+        }
+
+
+        /* =========================
+           RESET
+        ========================== */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+        }
+
+
+        html {
+
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family: "Manrope",
+            Arial,
+            sans-serif;
+
+            background: var(--fondo);
+
+            color: var(--texto);
+
+            line-height: 1.65;
+
+            overflow-x: hidden;
+        }
+
+
+        a {
+
+            color: inherit;
+
+            text-decoration: none;
+        }
+
+
+        button {
+
+            font-family: inherit;
+        }
+
+
+        .container {
+
+            width: min(
+                calc(100% - 40px),
+                var(--ancho)
+            );
+
+            margin: auto;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 1000;
+
+            background:
+                rgba(246,247,244,.86);
+
+            backdrop-filter:
+                blur(18px);
+
+            border-bottom:
+                1px solid
+                rgba(21,35,28,.07);
+
+            transition: .3s ease;
+        }
+
+
+        header.scrolled {
+
+            box-shadow:
+                0 8px 35px
+                rgba(24,46,35,.09);
+
+            background:
+                rgba(246,247,244,.96);
+        }
+
+
+        .nav {
+
+            height: 78px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content:
+                space-between;
+        }
+
+
+        /* LOGO */
+
+        .logo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 12px;
+
+            font-weight: 800;
+
+            font-size: 15px;
+        }
+
+
+        .logo-icon {
+
+            width: 43px;
+
+            height: 43px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 13px;
+
+            background:
+                var(--verde);
+
+            color: white;
+
+            font-weight: 800;
+        }
+
+
+        /* MENU */
+
+        .nav-menu {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+
+            font-size: 14px;
+
+            font-weight: 700;
+        }
+
+
+        .nav-menu a {
+
+            color: #304238;
+
+            transition: .2s ease;
+        }
+
+
+        .nav-menu a:hover {
+
+            color:
+                var(--verde);
+        }
+
+
+        .nav-contacto {
+
+            background:
+                var(--texto);
+
+            color:
+                white !important;
+
+            padding:
+                10px 19px;
+
+            border-radius:
+                50px;
+        }
+
+
+        /* MENU MOVIL */
+
+        .menu-btn {
+
+            display: none;
+
+            border: none;
+
+            background: transparent;
+
+            cursor: pointer;
+
+            font-size: 25px;
+
+            color: var(--texto);
+        }
+
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding:
+                130px 0 80px;
+        }
+
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+
+                linear-gradient(
+                    rgba(0,98,65,.045) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(0,98,65,.045) 1px,
+                    transparent 1px
+                );
+
+            background-size:
+                45px 45px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent 85%
+                );
+        }
+
+
+        .orb {
+
+            position: absolute;
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            filter: blur(10px);
+        }
+
+
+        .orb-1 {
+
+            width: 550px;
+
+            height: 550px;
+
+            right: -220px;
+
+            top: 80px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(0,98,65,.18),
+                    transparent 68%
+                );
+        }
+
+
+        .orb-2 {
+
+            width: 450px;
+
+            height: 450px;
+
+            left: -220px;
+
+            bottom: -100px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(122,75,45,.14),
+                    transparent 70%
+                );
+        }
+
+
+        .hero-grid {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: grid;
+
+            grid-template-columns:
+                1.4fr .8fr;
+
+            gap: 75px;
+
+            align-items: center;
+        }
+
+
+        .eyebrow {
+
+            color:
+                var(--verde);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing:
+                .16em;
+
+            margin-bottom: 20px;
+
+            display: inline-block;
+        }
+
+
+        .hero h1 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(
+                    48px,
+                    6vw,
+                    82px
+                );
+
+            line-height: 1.02;
+
+            letter-spacing:
+                -.04em;
+        }
+
+
+        .hero h1 span {
+
+            color:
+                var(--verde);
+        }
+
+
+        .hero-description {
+
+            max-width: 740px;
+
+            margin-top: 27px;
+
+            color:
+                var(--gris);
+
+            font-size: 18px;
+        }
+
+
+        /* BOTONES */
+
+        .buttons {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 14px;
+
+            margin-top: 35px;
+        }
+
+
+        .btn {
+
+            min-height: 52px;
+
+            padding:
+                0 25px;
+
+            border-radius:
+                50px;
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 9px;
+
+            font-size: 14px;
+
+            font-weight: 800;
+
+            transition: .25s ease;
+
+            cursor: pointer;
+        }
+
+
+        .btn:hover {
+
+            transform:
+                translateY(-3px);
+        }
+
+
+        .btn-primary {
+
+            background:
+                var(--verde);
+
+            color:
+                white;
+
+            box-shadow:
+                0 13px 30px
+                rgba(0,98,65,.20);
+        }
+
+
+        .btn-secondary {
+
+            background:
+                white;
+
+            border:
+                1px solid var(--borde);
+        }
+
+
+        .hero-info {
+
+            margin-top: 32px;
+
+            display: flex;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+
+            font-size: 13px;
+
+            color:
+                var(--gris);
+        }
+
+
+        .hero-info span {
+
+            position: relative;
+
+            padding-left: 18px;
+        }
+
+
+        .hero-info span::before {
+
+            content: "";
+
+            width: 7px;
+
+            height: 7px;
+
+            border-radius: 50%;
+
+            background:
+                var(--verde);
+
+            position: absolute;
+
+            left: 0;
+
+            top: 9px;
+        }
+
+
+        /* =========================
+           TARJETA HERO
+        ========================== */
+
+        .hero-card {
+
+            padding: 30px;
+
+            background:
+                rgba(255,255,255,.80);
+
+            border:
+                1px solid
+                rgba(0,98,65,.10);
+
+            backdrop-filter:
+                blur(20px);
+
+            border-radius:
+                30px;
+
+            box-shadow:
+                var(--sombra);
+        }
+
+
+        .card-title {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            color:
+                var(--gris);
+
+            font-size: 13px;
+        }
+
+
+        .status {
+
+            width: 10px;
+
+            height: 10px;
+
+            background:
+                #2bb673;
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 0 6px
+                rgba(43,182,115,.12);
+        }
+
+
+        .experience-number {
+
+            display: flex;
+
+            align-items: baseline;
+
+            gap: 12px;
+
+            margin: 25px 0;
+        }
+
+
+        .experience-number strong {
+
+            font-size: 68px;
+
+            color:
+                var(--verde);
+
+            line-height: 1;
+        }
+
+
+        .experience-number span {
+
+            color:
+                var(--gris);
+
+            max-width: 130px;
+
+            font-size: 14px;
+        }
+
+
+        .mini-cards {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 12px;
+        }
+
+
+        .mini-card {
+
+            background:
+                #eef3ef;
+
+            border-radius: 16px;
+
+            padding: 15px;
+        }
+
+
+        .mini-card small {
+
+            display: block;
+
+            color:
+                var(--gris);
+
+            font-size: 10px;
+
+            margin-bottom: 3px;
+        }
+
+
+        .mini-card strong {
+
+            font-size: 14px;
+        }
+
+
+        .card-line {
+
+            height: 1px;
+
+            background:
+                var(--borde);
+
+            margin: 24px 0;
+        }
+
+
+        .hero-card-description {
+
+            color:
+                var(--gris);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           SECCIONES
+        ========================== */
+
+        .section {
+
+            padding:
+                110px 0;
+        }
+
+
+        .section-light {
+
+            background:
+                var(--fondo);
+        }
+
+
+        .section-dark {
+
+            background:
+                #edf2ee;
+        }
+
+
+        .section-title {
+
+            margin-bottom: 55px;
+        }
+
+
+        .section-title.center {
+
+            text-align: center;
+
+            max-width: 760px;
+
+            margin-left: auto;
+
+            margin-right: auto;
+        }
+
+
+        .section-number {
+
+            color:
+                var(--verde);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing:
+                .16em;
+
+            display: inline-block;
+
+            margin-bottom: 17px;
+        }
+
+
+        .section-title h2 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(
+                    38px,
+                    4vw,
+                    58px
+                );
+
+            line-height:
+                1.08;
+
+            letter-spacing:
+                -.025em;
+        }
+
+
+        .section-title p {
+
+            margin-top: 15px;
+
+            color:
+                var(--gris);
+        }
+
+
+        /* =========================
+           PERFIL
+        ========================== */
+
+        .profile-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 90px;
+
+            align-items: start;
+        }
+
+
+        .profile-text p {
+
+            color:
+                var(--gris);
+
+            font-size: 17px;
+
+            margin-bottom: 22px;
+        }
+
+
+        blockquote {
+
+            background:
+                white;
+
+            border-left:
+                5px solid
+                var(--verde);
+
+            border-radius:
+                0 18px 18px 0;
+
+            padding:
+                28px 30px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 22px;
+
+            line-height:
+                1.45;
+
+            box-shadow:
+                var(--sombra);
+
+            margin-top: 30px;
+        }
+
+
+        /* =========================
+           EXPERIENCIA
+        ========================== */
+
+        .timeline {
+
+            max-width:
+                1000px;
+
+            margin:
+                auto;
+
+            position:
+                relative;
+        }
+
+
+        .timeline::before {
+
+            content: "";
+
+            position: absolute;
+
+            left: 170px;
+
+            top: 0;
+
+            bottom: 0;
+
+            width: 1px;
+
+            background:
+                rgba(0,98,65,.22);
+        }
+
+
+        .timeline-item {
+
+            display: grid;
+
+            grid-template-columns:
+                140px 1fr;
+
+            gap: 60px;
+
+            position:
+                relative;
+
+            margin-bottom:
+                35px;
+        }
+
+
+        .timeline-dot {
+
+            position: absolute;
+
+            left: 163px;
+
+            top: 30px;
+
+            width: 15px;
+
+            height: 15px;
+
+            border-radius: 50%;
+
+            background:
+                var(--verde);
+
+            border:
+                4px solid
+                #edf2ee;
+
+            box-shadow:
+                0 0 0 3px
+                rgba(0,98,65,.13);
+        }
+
+
+        .timeline-date {
+
+            padding-top: 30px;
+
+            color:
+                var(--verde);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing:
+                .08em;
+        }
+
+
+        .job-card {
+
+            background:
+                white;
+
+            border:
+                1px solid
+                rgba(0,98,65,.08);
+
+            border-radius:
+                var(--radio);
+
+            padding:
+                30px;
+
+            box-shadow:
+                0 16px 46px
+                rgba(23,48,36,.06);
+
+            transition:
+                .3s ease;
+        }
+
+
+        .job-card:hover {
+
+            transform:
+                translateY(-5px);
+
+            box-shadow:
+                var(--sombra);
+        }
+
+
+        .job-header {
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                flex-start;
+
+            gap: 20px;
+        }
+
+
+        .company {
+
+            color:
+                var(--verde);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .08em;
+        }
+
+
+        .job-card h3 {
+
+            font-size:
+                21px;
+
+            line-height:
+                1.3;
+
+            margin-top:
+                5px;
+        }
+
+
+        .job-tag {
+
+            padding:
+                8px 12px;
+
+            background:
+                var(--verde-claro);
+
+            color:
+                var(--verde-oscuro);
+
+            border-radius:
+                50px;
+
+            font-size:
+                10px;
+
+            font-weight:
+                800;
+
+            white-space:
+                nowrap;
+        }
+
+
+        .job-card ul {
+
+            padding-left:
+                20px;
+
+            margin-top:
+                20px;
+
+            color:
+                var(--gris);
+        }
+
+
+        .job-card li {
+
+            margin-bottom:
+                8px;
+        }
+
+
+        /* =========================
+           COMPETENCIAS
+        ========================== */
+
+        .skills-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                18px;
+        }
+
+
+        .skill-card {
+
+            background:
+                white;
+
+            padding:
+                28px;
+
+            border-radius:
+                var(--radio);
+
+            border:
+                1px solid
+                var(--borde);
+
+            transition:
+                .3s ease;
+        }
+
+
+        .skill-card:hover {
+
+            transform:
+                translateY(-7px);
+
+            box-shadow:
+                var(--sombra);
+
+            border-color:
+                rgba(0,98,65,.25);
+        }
+
+
+        .skill-icon {
+
+            width: 45px;
+
+            height: 45px;
+
+            border-radius:
+                14px;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            background:
+                var(--verde-claro);
+
+            color:
+                var(--verde);
+
+            font-size:
+                12px;
+
+            font-weight:
+                800;
+        }
+
+
+        .skill-card h3 {
+
+            margin-top:
+                18px;
+
+            font-size:
+                20px;
+        }
+
+
+        .skill-card p {
+
+            margin-top:
+                8px;
+
+            color:
+                var(--gris);
+
+            font-size:
+                14px;
+        }
+
+
+        /* =========================
+           PROGRAMAS
+        ========================== */
+
+        .programs {
+
+            background:
+                var(--verde-oscuro);
+
+            color:
+                white;
+        }
+
+
+        .programs .section-number {
+
+            color:
+                #83d8b2;
+        }
+
+
+        .programs-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3,1fr);
+
+            gap:
+                16px;
+        }
+
+
+        .program {
+
+            padding:
+                27px 18px;
+
+            text-align:
+                center;
+
+            border:
+                1px solid
+                rgba(255,255,255,.13);
+
+            border-radius:
+                18px;
+
+            background:
+                rgba(255,255,255,.055);
+
+            font-weight:
+                800;
+
+            transition:
+                .25s ease;
+        }
+
+
+        .program:hover {
+
+            transform:
+                translateY(-5px);
+
+            background:
+                rgba(255,255,255,.10);
+        }
+
+
+        /* =========================
+           FORMACION
+        ========================== */
+
+        .education-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                18px;
+
+            margin-bottom:
+                25px;
+        }
+
+
+        .education {
+
+            background:
+                white;
+
+            border:
+                1px solid
+                var(--borde);
+
+            border-radius:
+                var(--radio);
+
+            padding:
+                30px;
+        }
+
+
+        .education-year {
+
+            color:
+                var(--verde);
+
+            font-size:
+                12px;
+
+            font-weight:
+                800;
+        }
+
+
+        .education h3 {
+
+            font-size:
+                21px;
+
+            line-height:
+                1.3;
+
+            margin:
+                10px 0;
+        }
+
+
+        .education p {
+
+            color:
+                var(--gris);
+        }
+
+
+        .badge {
+
+            display:
+                inline-block;
+
+            margin-top:
+                17px;
+
+            background:
+                var(--verde-claro);
+
+            color:
+                var(--verde-oscuro);
+
+            padding:
+                7px 12px;
+
+            border-radius:
+                50px;
+
+            font-size:
+                11px;
+
+            font-weight:
+                800;
+        }
+
+
+        .courses {
+
+            background:
+                white;
+
+            padding:
+                30px;
+
+            border-radius:
+                var(--radio);
+
+            border:
+                1px solid
+                var(--borde);
+        }
+
+
+        .courses h3 {
+
+            margin-bottom:
+                18px;
+        }
+
+
+        .course-list {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                10px;
+        }
+
+
+        .course {
+
+            padding:
+                9px 13px;
+
+            background:
+                #eef3ef;
+
+            border-radius:
+                50px;
+
+            font-size:
+                13px;
+        }
+
+
+        /* =========================
+           HERRAMIENTAS
+        ========================== */
+
+        .tools {
+
+            margin-top:
+                50px;
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                12px;
+        }
+
+
+        .tool {
+
+            padding:
+                13px 18px;
+
+            border-radius:
+                50px;
+
+            background:
+                white;
+
+            border:
+                1px solid
+                var(--borde);
+
+            font-weight:
+                700;
+
+            font-size:
+                13px;
+        }
+
+
+        .tool i {
+
+            color:
+                var(--verde);
+
+            margin-right:
+                6px;
+        }
+
+
+        /* =========================
+           CONTACTO
+        ========================== */
+
+        .contact {
+
+            padding:
+                60px;
+
+            border-radius:
+                35px;
+
+            background:
+                var(--verde);
+
+            color:
+                white;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            gap:
+                40px;
+        }
+
+
+        .contact .section-number {
+
+            color:
+                #9be7c5;
+        }
+
+
+        .contact h2 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                52px;
+
+            margin-bottom:
+                10px;
+        }
+
+
+        .contact p {
+
+            max-width:
+                700px;
+
+            color:
+                rgba(255,255,255,.82);
+        }
+
+
+        .contact-buttons {
+
+            display:
+                flex;
+
+            gap:
+                12px;
+
+            flex-wrap:
+                wrap;
+        }
+
+
+        .btn-white {
+
+            background:
+                white;
+
+            color:
+                var(--verde-oscuro);
+        }
+
+
+        .btn-outline {
+
+            color:
+                white;
+
+            border:
+                1px solid
+                rgba(255,255,255,.4);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+
+            padding:
+                35px 0 45px;
+        }
+
+
+        .footer {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            color:
+                var(--gris);
+
+            font-size:
+                13px;
+        }
+
+
+        /* =========================
+           ANIMACIONES
+        ========================== */
+
+        .reveal {
+
+            opacity: 0;
+
+            transform:
+                translateY(25px);
+
+            transition:
+                opacity .7s ease,
+                transform .7s ease;
+        }
+
+
+        .reveal.visible {
+
+            opacity: 1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media(max-width: 1000px) {
+
+            .hero-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .profile-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    40px;
+            }
+
+
+            .skills-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+
+            .programs-grid {
+
+                grid-template-columns:
+                    repeat(2,1fr);
+            }
+
+
+            .contact {
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    flex-start;
+            }
+        }
+
+
+        @media(max-width: 800px) {
+
+            .menu-btn {
+
+                display:
+                    block;
+            }
+
+
+            .nav-menu {
+
+                display:
+                    none;
+
+                position:
+                    absolute;
+
+                top:
+                    78px;
+
+                left:
+                    20px;
+
+                right:
+                    20px;
+
+                background:
+                    white;
+
+                border-radius:
+                    20px;
+
+                padding:
+                    15px;
+
+                box-shadow:
+                    var(--sombra);
+
+                flex-direction:
+                    column;
+
+                align-items:
+                    stretch;
+
+                gap:
+                    5px;
+            }
+
+
+            .nav-menu.active {
+
+                display:
+                    flex;
+            }
+
+
+            .nav-menu a {
+
+                padding:
+                    12px;
+            }
+
+
+            .nav-contacto {
+
+                text-align:
+                    center;
+            }
+
+
+            .timeline::before {
+
+                left:
+                    7px;
+            }
+
+
+            .timeline-item {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    8px;
+
+                padding-left:
+                    35px;
+            }
+
+
+            .timeline-dot {
+
+                left:
+                    0;
+
+                top:
+                    8px;
+            }
+
+
+            .timeline-date {
+
+                padding-top:
+                    0;
+            }
+
+
+            .job-header {
+
+                flex-direction:
+                    column;
+            }
+
+
+            .job-tag {
+
+                white-space:
+                    normal;
+            }
+        }
+
+
+        @media(max-width: 600px) {
+
+            .container {
+
+                width:
+                    calc(100% - 28px);
+            }
+
+
+            .hero {
+
+                padding-top:
+                    120px;
+            }
+
+
+            .hero h1 {
+
+                font-size:
+                    45px;
+            }
+
+
+            .hero-description {
+
+                font-size:
+                    16px;
+            }
+
+
+            .section {
+
+                padding:
+                    80px 0;
+            }
+
+
+            .skills-grid,
+            .programs-grid,
+            .education-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .contact {
+
+                padding:
+                    35px 25px;
+            }
+
+
+            .contact h2 {
+
+                font-size:
+                    42px;
+            }
+
+
+            .contact-buttons {
+
+                width:
+                    100%;
+            }
+
+
+            .contact-buttons .btn {
+
+                width:
+                    100%;
+            }
+
+
+            .footer {
+
+                flex-direction:
+                    column;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================
+     HEADER
+================================== -->
+
+<header id="header">
+
+    <div class="container nav">
+
+
+        <a href="#inicio" class="logo">
+
+            <span class="logo-icon">
+                JA
+            </span>
+
+            <span>
+                Jhonatan Arias
+            </span>
+
+        </a>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Abrir menú">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#perfil">
+                Perfil
+            </a>
+
+            <a href="#experiencia">
+                Experiencia
+            </a>
+
+            <a href="#competencias">
+                Competencias
+            </a>
+
+            <a href="#formacion">
+                Formación
+            </a>
+
+            <a href="#contacto"
+               class="nav-contacto">
+
+                Contacto
+
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================
+     HERO
+================================== -->
+
+<section class="hero" id="inicio">
+
+
+    <div class="orb orb-1"></div>
+
+    <div class="orb orb-2"></div>
+
+
+    <div class="container hero-grid">
+
+
+        <!-- TEXTO -->
+
+        <div class="reveal">
+
+
+            <span class="eyebrow">
+
+                SOSTENIBILIDAD · TRAZABILIDAD · DATOS
+
+            </span>
+
+
+            <h1>
+
+                Conecto
+
+                <span>
+                    sostenibilidad,
+                </span>
+
+                trazabilidad y tecnología.
+
+            </h1>
+
+
+            <p class="hero-description">
+
+                Profesional en formación de Ingeniería de Sistemas
+                y Tecnólogo en Análisis y Desarrollo de Sistemas de
+                Información, con más de cinco años de experiencia en
+                gestión de información, trazabilidad y coordinación
+                de procesos operativos en el sector cafetero.
+
+            </p>
+
+
+            <div class="buttons">
+
+
+                <a
+                    href="#experiencia"
+                    class="btn btn-primary">
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                    Ver experiencia
+
+                </a>
+
+
+                <a
+                    href="CV_Jhonatan_Arias_Starbucks_Sostenibilidad.pdf"
+                    target="_blank"
+                    class="btn btn-secondary">
+
+                    <i class="fa-solid fa-file-pdf"></i>
+
+                    Descargar CV
+
+                </a>
+
+
+            </div>
+
+
+            <div class="hero-info">
+
+                <span>
+                    Timaná, Huila · Colombia
+                </span>
+
+                <span>
+                    Sector cafetero
+                </span>
+
+                <span>
+                    Sostenibilidad & datos
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- TARJETA -->
+
+        <div class="hero-card reveal">
+
+
+            <div class="card-title">
+
+                <span class="status"></span>
+
+                Perfil profesional
+
+            </div>
+
+
+            <div class="experience-number">
+
+                <strong>
+                    5+
+                </strong>
+
+                <span>
+                    años de experiencia
+                </span>
+
+            </div>
+
+
+            <div class="mini-cards">
+
+
+                <div class="mini-card">
+
+                    <small>
+                        SECTOR
+                    </small>
+
+                    <strong>
+                        Cafetero
+                    </strong>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    <small>
+                        ENFOQUE
+                    </small>
+
+                    <strong>
+                        Sostenibilidad
+                    </strong>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    <small>
+                        FORTALEZA
+                    </small>
+
+                    <strong>
+                        Datos
+                    </strong>
+
+                </div>
+
+
+                <div class="mini-card">
+
+                    <small>
+                        VALOR
+                    </small>
+
+                    <strong>
+                        Trazabilidad
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="card-line"></div>
+
+
+            <p class="hero-card-description">
+
+                Experiencia en programas de sostenibilidad,
+                abastecimiento responsable, gestión de productores,
+                auditorías, indicadores, control documental,
+                plataformas de trazabilidad y mejora continua.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================
+     PERFIL
+================================== -->
+
+<section class="section section-light"
+         id="perfil">
+
+
+    <div class="container profile-grid">
+
+
+        <div class="section-title reveal">
+
+
+            <span class="section-number">
+
+                01 · PERFIL
+
+            </span>
+
+
+            <h2>
+
+                Una combinación de café,
+                sostenibilidad, datos
+                y tecnología.
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="profile-text reveal">
+
+
+            <p>
+
+                Mi experiencia se ha desarrollado alrededor de la
+                administración de información, la trazabilidad de
+                cadenas de suministro y el seguimiento de procesos
+                asociados a sostenibilidad y cumplimiento.
+
+            </p>
+
+
+            <p>
+
+                He trabajado articulando información entre equipos
+                operativos, administrativos, comerciales y de campo,
+                apoyando procesos relacionados con C.A.F.E. Practices,
+                Rainforest Alliance, Fairtrade / FLOCERT, Nespresso AAA
+                y requisitos de trazabilidad.
+
+            </p>
+
+
+            <p>
+
+                Combino conocimiento del sector cafetero con capacidades
+                de análisis de datos y digitalización de procesos para
+                convertir información operativa en herramientas útiles
+                para la toma de decisiones.
+
+            </p>
+
+
+            <blockquote>
+
+                “Conectar sostenibilidad, trazabilidad y datos para
+                convertir información operativa en procesos más
+                confiables, eficientes y orientados al cumplimiento.”
+
+            </blockquote>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================
+     EXPERIENCIA
+================================== -->
+
+<section class="section section-dark"
+         id="experiencia">
+
+
+    <div class="container">
+
+
+        <div class="section-title center reveal">
+
+
+            <span class="section-number">
+
+                02 · EXPERIENCIA
+
+            </span>
+
+
+            <h2>
+
+                Experiencia profesional
+
+            </h2>
+
+
+            <p>
+
+                Procesos · Datos · Trazabilidad · Sostenibilidad · Mejora continua
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="timeline">
+
+
+            <!-- EXPERIENCIA 1 -->
+
+            <article class="timeline-item reveal">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-date">
+
+                    2024 — 2026
+
+                </div>
+
+
+                <div class="job-card">
+
+
+                    <div class="job-header">
+
+
+                        <div>
+
+                            <span class="company">
+
+                                SKN Caribecafé S.A.S.
+
+                            </span>
+
+
+                            <h3>
+
+                                Gestor de Información,
+                                Tecnología y Coordinación Operativa
+
+                            </h3>
+
+                        </div>
+
+
+                        <span class="job-tag">
+
+                            Café · Datos · Operación
+
+                        </span>
+
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Coordinar y realizar seguimiento a procesos
+                            relacionados con trazabilidad, gestión de
+                            información y operación de la cadena de suministro.
+                        </li>
+
+                        <li>
+                            Administrar y validar bases de datos, asegurando
+                            integridad, consistencia, disponibilidad y calidad
+                            de la información.
+                        </li>
+
+                        <li>
+                            Gestionar información utilizada para procesos de
+                            sostenibilidad, cumplimiento, trazabilidad y
+                            certificaciones.
+                        </li>
+
+                        <li>
+                            Consolidar, analizar y transformar información
+                            para generar indicadores, reportes y herramientas
+                            de seguimiento.
+                        </li>
+
+                        <li>
+                            Identificar inconsistencias, riesgos y desviaciones
+                            en la información y coordinar acciones para su
+                            corrección.
+                        </li>
+
+                        <li>
+                            Participar en auditorías internas y externas,
+                            preparando y verificando documentación y
+                            evidencias requeridas.
+                        </li>
+
+                        <li>
+                            Apoyar procesos relacionados con C.A.F.E. Practices,
+                            Rainforest Alliance, Fairtrade, Nespresso AAA
+                            y requisitos asociados a EUDR.
+                        </li>
+
+                        <li>
+                            Participar en iniciativas de digitalización,
+                            automatización y mejora continua de procesos.
+                        </li>
+
+                        <li>
+                            Elaborar documentación, procedimientos,
+                            reportes y materiales de apoyo.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- EXPERIENCIA 2 -->
+
+            <article class="timeline-item reveal">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-date">
+
+                    2021 — 2024
+
+                </div>
+
+
+                <div class="job-card">
+
+
+                    <div class="job-header">
+
+
+                        <div>
+
+                            <span class="company">
+
+                                SKN Caribecafé S.A.S.
+
+                            </span>
+
+
+                            <h3>
+
+                                Asistente de Operaciones
+                                y Trazabilidad
+
+                            </h3>
+
+                        </div>
+
+
+                        <span class="job-tag">
+
+                            Trazabilidad · Sostenibilidad
+
+                        </span>
+
+
+                    </div>
+
+
+                    <ul>
+
+                        <li>
+                            Ejecutar actividades de trazabilidad y seguimiento
+                            de la cadena de suministro de café.
+                        </li>
+
+                        <li>
+                            Gestionar y validar información de productores,
+                            compras, movimientos y procesos operativos.
+                        </li>
+
+                        <li>
+                            Verificar procedimientos relacionados con programas
+                            de sostenibilidad y certificaciones.
+                        </li>
+
+                        <li>
+                            Administrar y actualizar bases de datos garantizando
+                            calidad y consistencia.
+                        </li>
+
+                        <li>
+                            Coordinar el flujo de información entre equipos
+                            de campo, operaciones y áreas administrativas.
+                        </li>
+
+                        <li>
+                            Gestionar documentación y registros requeridos
+                            para procesos de trazabilidad y cumplimiento.
+                        </li>
+
+                        <li>
+                            Elaborar reportes e indicadores para seguimiento
+                            de procesos.
+                        </li>
+
+                        <li>
+                            Apoyar la preparación de información para auditorías
+                            internas y externas.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- EXPERIENCIA 3 -->
+
+            <article class="timeline-item reveal">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-date">
+
+                    2019
+
+                </div>
+
+
+                <div class="job-card">
+
+
+                    <span class="company">
+
+                        Concejo Municipal de Timaná
+
+                    </span>
+
+
+                    <h3>
+
+                        Auxiliar Administrativo
+
+                    </h3>
+
+
+                    <ul>
+
+                        <li>
+                            Gestión documental y organización de archivos
+                            físicos y digitales.
+                        </li>
+
+                        <li>
+                            Actualización de registros y bases de datos.
+                        </li>
+
+                        <li>
+                            Elaboración de informes y documentos administrativos.
+                        </li>
+
+                        <li>
+                            Seguimiento de actividades y requerimientos.
+                        </li>
+
+                    </ul>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- EXPERIENCIA 4 -->
+
+            <article class="timeline-item reveal">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-date">
+
+                    2018
+
+                </div>
+
+
+                <div class="job-card">
+
+
+                    <span class="company">
+
+                        Alcaldía Municipal de Timaná
+
+                    </span>
+
+
+                    <h3>
+
+                        Practicante Administrativo
+
+                    </h3>
+
+
+                    <p style="
+                        color:#66746d;
+                        margin-top:12px;
+                    ">
+
+                        Apoyo a procesos administrativos, registro y
+                        validación de información, gestión documental,
+                        elaboración de reportes y seguimiento de trámites.
+
+                    </p>
+
+
+                </div>
+
+
+            </article>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================
+     COMPETENCIAS
+================================== -->
+
+<section class="section"
+         id="competencias">
+
+
+    <div class="container">
+
+
+        <div class="section-title reveal">
+
+
+            <span class="section-number">
+
+                03 · COMPETENCIAS
+
+            </span>
+
+
+            <h2>
+
+                Capacidades que conectan
+                estrategia y operación.
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="skills-grid">
+
+
+            <article class="skill-card reveal">
+
+                <div class="skill-icon">
+                    01
+                </div>
+
+                <h3>
+                    Sostenibilidad
+                </h3>
+
+                <p>
+
+                    Abastecimiento responsable,
+                    cumplimiento, auditorías,
+                    control documental y programas
+                    del sector cafetero.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="skill-card reveal">
+
+                <div class="skill-icon">
+                    02
+                </div>
+
+                <h3>
+                    Trazabilidad
+                </h3>
+
+                <p>
+
+                    Seguimiento de cadenas de suministro,
+                    productores, movimientos, registros
+                    y validación de información.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="skill-card reveal">
+
+                <div class="skill-icon">
+                    03
+                </div>
+
+                <h3>
+                    Gestión de datos
+                </h3>
+
+                <p>
+
+                    Excel avanzado, Power Query,
+                    Power BI, consolidación,
+                    depuración e indicadores.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="skill-card reveal">
+
+                <div class="skill-icon">
+                    04
+                </div>
+
+                <h3>
+                    Digitalización
+                </h3>
+
+                <p>
+
+                    Mejora de procesos,
+                    automatización, herramientas
+                    tecnológicas y plataformas.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="skill-card reveal">
+
+                <div class="skill-icon">
+                    05
+                </div>
+
+                <h3>
+                    Coordinación
+                </h3>
+
+                <p>
+
+                    Trabajo con equipos
+                    multidisciplinarios, seguimiento
+                    de cronogramas y stakeholders.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="skill-card reveal">
+
+                <div class="skill-icon">
+                    06
+                </div>
+
+                <h3>
+                    Mejora continua
+                </h3>
+
+                <p>
+
+                    Identificación de inconsistencias,
+                    acciones correctivas y optimización
+                    de procesos.
+
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- HERRAMIENTAS -->
+
+        <div class="section-title"
+             style="margin-top:90px;margin-bottom:20px;">
+
+            <span class="section-number">
+
+                HERRAMIENTAS
+
+            </span>
+
+            <h2 style="font-size:38px;">
+
+                Tecnología aplicada al negocio.
+
+            </h2>
+
+        </div>
+
+
+        <div class="tools">
+
+
+            <span class="tool">
+
+                <i class="fa-solid fa-file-excel"></i>
+
+                Microsoft Excel
+
+            </span>
+
+
+            <span class="tool">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                Power BI
+
+            </span>
+
+
+            <span class="tool">
+
+                <i class="fa-solid fa-database"></i>
+
+                Power Query
+
+            </span>
+
+
+            <span class="tool">
+
+                <i class="fa-solid fa-laptop"></i>
+
+                Microsoft 365
+
+            </span>
+
+
+            <span class="tool">
+
+                <i class="fa-solid fa-diagram-project"></i>
+
+                Sistemas de información
+
+            </span>
+
+
+            <span class="tool">
+
+                <i class="fa-solid fa-route"></i>
+
+                Plataformas de trazabilidad
+
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================
+     PROGRAMAS
+================================== -->
+
+<section class="section programs">
+
+
+    <div class="container">
+
+
+        <div class="section-title center reveal">
+
+
+            <span class="section-number">
+
+                04 · PROGRAMAS Y ESTÁNDARES
+
+            </span>
+
+
+            <h2>
+
+                Experiencia vinculada
+                al sector cafetero.
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="programs-grid">
+
+
+            <div class="program reveal">
+
+                C.A.F.E. Practices
+
+            </div>
+
+
+            <div class="program reveal">
+
+                Rainforest Alliance
+
+            </div>
+
+
+            <div class="program reveal">
+
+                Fairtrade / FLOCERT
+
+            </div>
+
+
+            <div class="program reveal">
+
+                Nespresso AAA
+
+            </div>
+
+
+            <div class="program reveal">
+
+                EUDR
+
+            </div>
+
+
+            <div class="program reveal">
+
+                Trazabilidad
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================
+     FORMACION
+================================== -->
+
+<section class="section section-dark"
+         id="formacion">
+
+
+    <div class="container">
+
+
+        <div class="section-title reveal">
+
+
+            <span class="section-number">
+
+                05 · FORMACIÓN
+
+            </span>
+
+
+            <h2>
+
+                Formación académica
+                y complementaria.
+
+            </h2>
+
+
+        </div>
+
+
+
+        <div class="education-grid">
+
+
+            <article class="education reveal">
+
+
+                <span class="education-year">
+
+                    2023 — ACTUALIDAD
+
+                </span>
+
+
+                <h3>
+
+                    Ingeniería de Sistemas
+
+                </h3>
+
+
+                <p>
+
+                    Universidad Nacional Abierta
+                    y a Distancia — UNAD
+
+                </p>
+
+
+                <span class="badge">
+
+                    Profesional en formación
+
+                </span>
+
+
+            </article>
+
+
+
+            <article class="education reveal">
+
+
+                <span class="education-year">
+
+                    2016 — 2018
+
+                </span>
+
+
+                <h3>
+
+                    Tecnólogo en Análisis y Desarrollo
+                    de Sistemas de Información
+
+                </h3>
+
+
+                <p>
+
+                    SENA — Centro de Gestión y
+                    Desarrollo Sostenible Surcolombiano
+
+                </p>
+
+
+            </article>
+
+
+        </div>
+
+
+
+        <div class="courses reveal">
+
+
+            <h3>
+
+                Formación complementaria
+
+            </h3>
+
+
+            <div class="course-list">
+
+
+                <span class="course">
+
+                    Comunicación asertiva y persuasiva
+                    para líderes
+
+                </span>
+
+
+                <span class="course">
+
+                    Archivo y manejo de documentos digitales
+
+                </span>
+
+
+                <span class="course">
+
+                    Liderazgo
+
+                </span>
+
+
+                <span class="course">
+
+                    Máster Power BI Microsoft
+
+                </span>
+
+
+                <span class="course">
+
+                    English Dot Works 1–4
+
+                </span>
+
+
+                <span class="course">
+
+                    Inglés A1 básico–intermedio
+
+                </span>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================
+     CONTACTO
+================================== -->
+
+<section class="section"
+         id="contacto">
+
+
+    <div class="container">
+
+
+        <div class="contact reveal">
+
+
+            <div>
+
+
+                <span class="section-number">
+
+                    06 · CONTACTO
+
+                </span>
+
+
+                <h2>
+
+                    ¿Hablamos?
+
+                </h2>
+
+
+                <p>
+
+                    Estoy interesado en proyectos y oportunidades
+                    donde pueda aportar en sostenibilidad, trazabilidad,
+                    gestión de datos, transformación digital y mejora
+                    de procesos.
+
+                </p>
+
+
+            </div>
+
+
+            <div class="contact-buttons">
+
+
+                <a
+                    href="mailto:jhonatanarias685@gmail.com"
+                    class="btn btn-white">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    Enviar correo
+
+                </a>
+
+
+                <a
+                    href="tel:+573108852118"
+                    class="btn btn-outline">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    Llamar
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==================================
+     FOOTER
+================================== -->
+
+<footer>
+
+
+    <div class="container footer">
+
+
+        <p>
+
+            © <span id="year"></span>
+            Jhonatan Arias Cerquera.
+
+        </p>
+
+
+        <p>
+
+            Sostenibilidad · Trazabilidad · Datos · Tecnología
+
+        </p>
+
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- ==================================
+     JAVASCRIPT
+================================== -->
+
+<script>
+
+
+    /* =========================
+       MENÚ MÓVIL
+    ========================== */
+
+    const menuBtn =
+        document.getElementById("menuBtn");
+
+    const navMenu =
+        document.getElementById("navMenu");
+
+
+    menuBtn.addEventListener(
+        "click",
+        function() {
+
+            navMenu.classList.toggle(
+                "active"
+            );
+
+        }
+    );
+
+
+    /* Cerrar menú al seleccionar */
+
+    document
+        .querySelectorAll(".nav-menu a")
+        .forEach(function(link) {
+
+            link.addEventListener(
+                "click",
+                function() {
+
+                    navMenu.classList.remove(
+                        "active"
+                    );
+
+                }
+            );
+
+        });
+
+
+
+    /* =========================
+       HEADER AL HACER SCROLL
+    ========================== */
+
+    const header =
+        document.getElementById("header");
+
+
+    window.addEventListener(
+        "scroll",
+        function() {
+
+            if (
+                window.scrollY > 20
+            ) {
+
+                header.classList.add(
+                    "scrolled"
+                );
+
+            } else {
+
+                header.classList.remove(
+                    "scrolled"
+                );
+
+            }
+
+        }
+    );
+
+
+
+    /* =========================
+       ANIMACIONES
+    ========================== */
+
+    const elements =
+        document.querySelectorAll(
+            ".reveal"
+        );
+
+
+    const observer =
+        new IntersectionObserver(
+            function(entries) {
+
+                entries.forEach(
+                    function(entry) {
+
+                        if (
+                            entry.isIntersecting
+                        ) {
+
+                            entry.target.classList.add(
+                                "visible"
+                            );
+
+                            observer.unobserve(
+                                entry.target
+                            );
+
+                        }
+
+                    }
+                );
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    elements.forEach(
+        function(element) {
+
+            observer.observe(
+                element
+            );
+
+        }
+    );
+
+
+
+    /* =========================
+       AÑO AUTOMÁTICO
+    ========================== */
+
+    document.getElementById(
+        "year"
+    ).textContent =
+        new Date().getFullYear();
+
+
+
+    /* =========================
+       EFECTO SUAVE DEL MOUSE
+    ========================== */
+
+    document.addEventListener(
+        "mousemove",
+        function(event) {
+
+            const x =
+                event.clientX / window.innerWidth;
+
+            const y =
+                event.clientY / window.innerHeight;
+
+
+            const orb1 =
+                document.querySelector(
+                    ".orb-1"
+                );
+
+
+            const orb2 =
+                document.querySelector(
+                    ".orb-2"
+                );
+
+
+            if (orb1) {
+
+                orb1.style.transform =
+                    `translate(
+                        ${x * -25}px,
+                        ${y * 15}px
+                    )`;
+
+            }
+
+
+            if (orb2) {
+
+                orb2.style.transform =
+                    `translate(
+                        ${x * 20}px,
+                        ${y * -15}px
+                    )`;
+
+            }
+
+        }
+    );
+
+</script>
+
+
+</body>
+</html>
